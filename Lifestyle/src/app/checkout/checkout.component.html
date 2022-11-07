@@ -1,0 +1,48 @@
+<div class="main-content page-m">
+    <div class="section-content section-p30">
+        <div class="container-fluid">
+            <form [formGroup]="checkoutFormGroup" (ngSubmit)="onSubmit()">
+                <div formGroupName="customer" class="form-area">
+                    
+                    <h3>Customer Details</h3>
+                    <div class="row">
+                        <div class="col-md-2"> <label>first Name</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="firstName" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"> <label>Last Name</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="lastName" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"> <label>Email Address</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="email" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"> <label>Mobile Number</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="mobileNumber" type="number">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+<div class="text-center">
+    <button type="submit" class="btn btn-info">Purchase</button>
+</div>
+            </form>
+        </div>
+    </div>
+</div>
